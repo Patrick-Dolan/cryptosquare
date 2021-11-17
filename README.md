@@ -39,4 +39,21 @@ _dolanp1992@gmail.com_
 
 _{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _date_ _author name(s)_  
+
+## Notes  
+
+1. Take away spaces and punctuation from users text and downcase all of it 
+2. Determine number of columns and rows (squart root and cieling should help)
+3. Assign number to length of original message for use in a for loop
+4. Push message into an array
+5. Take message and join it into 5 letter groups 
+
+## Tests  
+
+**describe prepareText()**
+**Test:** "It should take a passage and downcase all the letter"
+**Code:**  
+const passage = "It sHoUlD, TaKe AlL oF ThE LeTtErS, aNd DoWnCaSe ThEm!";  
+prepareText(passage);  
+**Expected Output:** "it should, take all of the letters, and downcase them!"  
