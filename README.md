@@ -52,8 +52,24 @@ Copyright (c) _date_ _author name(s)_
 ## Tests  
 
 **describe prepareText()**
-**Test:** "It should take a passage and downcase all the letter"
+**Test:** "It should take some text and downcase all the letter"
 **Code:**  
-const passage = "It sHoUlD, TaKe AlL oF ThE LeTtErS, aNd DoWnCaSe ThEm!";  
-prepareText(passage);  
+const text = "It sHoUlD, TaKe AlL oF ThE LeTtErS, aNd DoWnCaSe ThEm!";  
+prepareText(text);  
 **Expected Output:** "it should, take all of the letters, and downcase them!"  
+<br>
+
+**Test:** "It should remove spaces and punctuation from the text"
+**Code:**  
+const text = "it should, take all of the letters, and downcase them!"  
+prepareText(text);  
+**Expected Output:** "itshouldtakeallofthelettersanddowncasethem"  
+
+**Describe encryptSquare**
+**Test:** "It should take the length of the text and set a variable to that number for the for loop"  
+**Code:**  
+const text = "it should, take all of the letters, and downcase them!"
+encryptSquare(text);
+**Expected Output:**  
+columns: 7  
+rows: 6  
