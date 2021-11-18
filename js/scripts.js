@@ -20,5 +20,4 @@ function encryptSquare(text) {
   }
   let result = codedMessage.join("").match(/.{1,5}/g);
   return result.join(" ");
-
 }
