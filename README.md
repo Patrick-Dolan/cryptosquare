@@ -84,4 +84,10 @@ encryptSquare(text);
 **Code:**  
 const text = "it should, take all of the letters, and downcase them!";  
 encryptSquare(text);  
-**Expected Output:** [idlen, attot, dssaf, tdehk, teoto, ehrwh, uaesn, eiila, cm]
+**Expected Output:** "idlen attot dssaf tdehk teoto ehrwh uaesn eiila cm"
+
+**Test:** "It should take into account the row numbers to make words at the end of the coded message shorter as needed"
+**Code:**  
+const text = "don't compare yourself to others, compare yourself to the person you were yesterday";  
+encryptSquare(text);  
+**Expected Output:** "daeer leweo rlref rerne fsyts rdtyt coooe acooo utnyy ouomr hyemr tpseo spsha eput"
