@@ -61,15 +61,27 @@ prepareText(text);
 
 **Test:** "It should remove spaces and punctuation from the text"
 **Code:**  
-const text = "it should, take all of the letters, and downcase them!"  
+const text = "it should, take all of the letters, and downcase them!"  ;
 prepareText(text);  
 **Expected Output:** "itshouldtakeallofthelettersanddowncasethem"  
 
 **Describe encryptSquare**
 **Test:** "It should take the length of the text and set a variable to that number for the for loop"  
 **Code:**  
-const text = "it should, take all of the letters, and downcase them!"
+const text = "it should, take all of the letters, and downcase them!";
 encryptSquare(text);
 **Expected Output:**  
 columns: 7  
 rows: 6  
+
+**Test:** "It should create a new string based on column and rows numbers"
+**Code:**  
+const text = "it should, take all of the letters, and downcase them!";  
+encryptSquare(text);  
+**ExpectedOutput:** "idlenattotdssaftdehkteotoehrwhuaesneiilacm"  
+
+**Test:** "It should take the coded string and split it into 5 character chunks"  
+**Code:**  
+const text = "it should, take all of the letters, and downcase them!";  
+encryptSquare(text);  
+**Expected Output:** [idlen, attot, dssaf, tdehk, teoto, ehrwh, uaesn, eiila, cm]
